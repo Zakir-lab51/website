@@ -164,7 +164,7 @@
   }
 
   .hero {
-    width: min(860px, 100%);
+    width: min(1080px, 100%);
     text-align: center;
   }
 
@@ -228,10 +228,10 @@
   /* ── SUBJECT PILLS ── */
   /* ── CARDS ── */
   .quick-links {
-    width: min(940px, 100%);
+    width: min(1080px, 100%);
     margin: clamp(36px, 6vh, 60px) auto 0;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 16px;
   }
 
@@ -344,6 +344,11 @@
   .card-coral:hover { box-shadow: 0 20px 40px rgba(0,0,0,.45), 0 0 0 1px rgba(255,107,107,.35); }
   .card-coral:hover::before { background: radial-gradient(circle at 60% 30%, rgba(255,107,107,.1), transparent 65%); }
   .card-coral:hover .card-arrow { color: var(--coral); }
+
+  .card-blue .card-title { color: #85b7eb; }
+  .card-blue:hover { box-shadow: 0 20px 40px rgba(0,0,0,.45), 0 0 0 1px rgba(133,183,235,.35); }
+  .card-blue:hover::before { background: radial-gradient(circle at 60% 30%, rgba(133,183,235,.11), transparent 65%); }
+  .card-blue:hover .card-arrow { color: #85b7eb; }
 
   .card-spotting .card-icon {
     color: var(--green);
@@ -509,6 +514,13 @@
           <div class="card-icon">SP</div>
           <div class="spotting-title">Spotting</div>
           <div class="spotting-subtitle">Anatomy</div>
+          <div class="card-arrow">Open &rarr;</div>
+        </a>
+
+        <a class="card card-blue" href="microscope-photos/">
+          <div class="card-icon">MP</div>
+          <div class="card-title">Microscope Photos</div>
+          <div class="card-desc">Practice histology slides from microscope photo flashcards.</div>
           <div class="card-arrow">Open &rarr;</div>
         </a>
 
